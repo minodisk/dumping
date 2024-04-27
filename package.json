@@ -1,19 +1,18 @@
 {
   "name": "dumping",
-  "type": "module",
   "version": "0.0.7",
   "license": "Apache-2.0",
-  "main": "./out/dumping.js",
+  "main": "./out/main.js",
   "bin": {
-    "dumping": "./out/dumping.js"
+    "dumping": "./out/main.js"
   },
   "scripts": {
-    "start": "node ./out/dumping.js",
+    "start": "node ./out/main.js",
     "dev": "rimraf ./out && pnpm --stream --parallel /^dev:.*$/",
-    "dev:js": "pnpm run js --watch",
+    "dev:build": "pnpm run build --watch",
     "dev:run": "nodemon",
-    "build": "pnpm run js",
-    "js": "esbuild ./src/main.ts --platform=node --format=esm --bundle --external:./node_modules/* --outfile=./out/dumping.js",
+    "build": "tsc ./src/main.ts --outDir ./out",
+    "esbuild": "esbuild ./src/main.ts --platform=node --format=cjs --external:./node_modules/* --bundle --outfile=./out/main.js",
     "test": "vitest --silent=false",
     "check": "pnpm --stream --parallel /^check:.*$/",
     "check:tsc": "tsc",
