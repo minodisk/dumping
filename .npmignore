@@ -1,0 +1,7 @@
+.github
+.prettierrc
+.tool-versions
+.vscode
+eslint.config.js
+src
+tsconfig.json
