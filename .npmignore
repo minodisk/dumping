@@ -2,6 +2,7 @@
 .prettierrc
 .tool-versions
 .vscode
-eslint.config.js
 src
+*.js
+*.png
 tsconfig.json

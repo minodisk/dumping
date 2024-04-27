@@ -1,7 +1,7 @@
 # dumping
 
 <p align="center">
-  <img src="./dumptruck.png">
+  <img src="https://github.com/minodisk/dumping/raw/main/dumptruck.png">
 </p>
 
 A temporary server that only dumps and prints requests.
