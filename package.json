@@ -1,7 +1,7 @@
 {
   "name": "dumping",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./out/dumping.js",
   "bin": {
     "dumping": "./out/dumping.js"
